@@ -8,14 +8,27 @@
 <meta property="og:title" content="Andrew Brkovic">
 <meta property="og:description" content="Product owner in Toronto. Notes on what actually happens when an AI product meets real customers.">
 <meta property="og:type" content="website">
-<link rel="stylesheet" href="/style.css">
-<script src="/app.js" defer></script>
+<link rel="stylesheet" href="/style.css?v=2">
+<script src="/app.js?v=2" defer></script>
 </head>
 <body>
 <main>
 
-  <header>
+  <header class="site-head">
     <h1>Andrew Brkovic</h1>
+
+    <section id="now-playing" hidden aria-label="Currently listening">
+      <img class="np-art" alt="" width="36" height="36" loading="lazy">
+      <div class="np-meta">
+        <a class="np-title" target="_blank" rel="noopener">Spotify</a>
+        <span class="np-sub">
+          <span class="np-artist"></span>
+          <span class="np-bars" aria-hidden="true"><i></i><i></i><i></i></span>
+        </span>
+      </div>
+      <span class="np-progress"><span></span></span>
+    </section>
+
     <p class="lede">
       Product owner in Toronto. I write about what actually happens when an AI
       product meets real customers — the pricing change, the onboarding rebuild,
@@ -25,16 +38,6 @@
       Most writing about AI is about what it can do. This is about what it costs,
       what breaks, and what nobody measures.
     </p>
-
-    <section id="now-playing" hidden aria-label="Currently listening">
-      <img class="np-art" alt="" width="52" height="52" loading="lazy">
-      <div class="np-meta">
-        <a class="np-title" target="_blank" rel="noopener">Spotify</a>
-        <span class="np-artist"></span>
-      </div>
-      <span class="np-bars" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
-      <span class="np-progress"><span></span></span>
-    </section>
   </header>
 
   <section aria-labelledby="writing">
