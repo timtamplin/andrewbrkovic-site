@@ -1,5 +1,7 @@
 # Kill the duplicate copy served from the repo-root path
 /public/*  /:splat  301
 
-# One canonical hostname
-https://www.andrewbrkovic.com/*  https://andrewbrkovic.com/:splat  301
+# NOTE: cross-host redirects do NOT work from this file on a Pages project.
+# www -> apex is handled by a Cloudflare Redirect Rule:
+#   Request URL: https://www.andrewbrkovic.com/*
+#   Target URL:  https://andrewbrkovic.com/$1   (301)
